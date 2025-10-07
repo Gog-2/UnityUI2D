@@ -16,8 +16,8 @@ public class LvlCell : MonoBehaviour
             _lock.SetActive(true);
             return;
         }
-        int starsget = Random.Range(0, 4);
-        if (starsget == 0)
+        int starsget = Random.Range(1, 4);
+        if (starsget == 1)
             return;
         for (int i = 0; i < starsget; i++)
         {
