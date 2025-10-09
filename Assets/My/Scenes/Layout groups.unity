@@ -963,8 +963,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6069143164258251677, guid: f7f5f3c8ced29ea40ab53ebc0a934dd4, type: 3}
   ListLvl: {fileID: 965959839}
-  counter: 0
   _prefab: {fileID: 1022577813}
+  LvlLeght: 10
+  OpenLvl: 4
 --- !u!1 &965959839
 GameObject:
   m_ObjectHideFlags: 0

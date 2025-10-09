@@ -4,16 +4,18 @@ using UnityEngine;
 public class LvlManager : MonoBehaviour
 {
     public GameObject prefab, ListLvl;
-    public int counter = 0;
+    private int _counter = 0;
     [SerializeField] private LvlCell _prefab;
+    [Header("Lvl Settings")]
+    public int LvlLeght = 10;
+    [SerializeField][Range(1, 10)] private int OpenLvl;
     private void Start()
     {
-        int OpenLevelCounter = UnityEngine.Random.Range(0, 10);
-        for (int i = 0; i < 10; i++)
+        for (int i = 1; i <= LvlLeght; i++)
         {
-            counter++;
+            _counter++;
             LvlCell cell = Instantiate(_prefab, ListLvl.transform);
-            cell.Init(counter, i > OpenLevelCounter);
+            cell.Init( _counter, i > OpenLvl);
         }
     }
 }
